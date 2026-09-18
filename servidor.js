@@ -56,7 +56,7 @@ app.get('/treinos/:id', (req, res) => {
 });
 
 // ------------------------------------------------------------
-// POST /treinos - cria um treino (400 se os dados forem invalidos)
+// POST /treinos - cria um treino (400 se os dados forem
 // ------------------------------------------------------------
 app.post('/treinos', (req, res) => {
     const erro = validarTreino(req.body);
