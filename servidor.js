@@ -23,11 +23,11 @@ app.use(express.json());
 const db = new DatabaseSync('treinos.db');
 // Garante que a tabela existe
 db.exec(`
-CREATE TABLE IF NOT EXISTS treinos (
-id INTEGER PRIMARY KEY AUTOINCREMENT,
-nome TEXT NOT NULL,
-duracao INTEGER NOT NULL
-)
+    CREATE TABLE IF NOT EXISTS treinos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    duracao INTEGER NOT NULL
+    )
 `);
 
 // ------------------------------------------------------------
@@ -116,6 +116,18 @@ res.status(204).end();
 });
 
 // ------------------------------------------------------------
+
+// aula 3- atividades
+//==========
+// 1
+app.get('/treinos/total', (req, res) => {
+  const resultado = db.prepare('SELECT COUNT(*) AS total FROM treinos').get();
+  res.status(200).json({ total: resultado.total });
+});
+
+// 2
+
+
 const PORTA = 3000;
 app.listen(PORTA, () => {
     console.log(`Servidor rodando em http://localhost:${PORTA}`);
