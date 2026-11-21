@@ -1,3 +1,15 @@
-Emilly, seu repositório fechou em 1,1 de 2,5. Na aula 2, a API passou nos 10 testes no commit 92eb10e, de 11/09. Na aula 3, a migração para SQLite passou em 7 de 7 testes e em 1 de 3 exercícios (melhor resultado no commit 9ce76f4, de 25/09). Faltou: nos exercícios, o GET /treinos/total; e o filtro ?minimo=. Na aula 4, 5 de 8 testes passaram no commit fea4dac, de 16/10. Faltou: o teste-banco2.js não existe ou termina com erro; o CRUD deixou de responder como na aula 3 depois da separação em camadas; e os dados não persistem depois de reiniciar o servidor. A regra dos 180 minutos está no treinosService.js. A aula 5 não foi entregue. A aula 6 não foi entregue: não há bcrypt no package.json, nem criarUsuarios.js, e a senha continua em texto puro. Para entregar, falta instalar o bcrypt, gerar o hash no criarUsuarios.js, guardar só o senha_hash e comparar com await bcrypt.compare no authService. O servidor.js que você entregou na aula 3 ficou idêntico ao de outro colega, o que indica que o código foi copiado e não feito por você. Por isso a nota teve um desconto de 0,3.
+Emilly, sua nota do repositório ficou em 1,6 de 3,0.
 
-Se tiver dúvida, fala na próxima aula.
+Olhei todos os seus commits até 20/11 às 23h59 e fiquei com o melhor resultado de cada aula, então o que você reentregou já entrou na conta. Cada aula vale um quinto da nota, metade pela entrega e metade pelos testes que passaram. O seu servidor.js ficou igual ao de outro colega, então teve o desconto de cópia.
+
+Na aula 2 sua API passou nos 10 testes, no commit 9ce76f4 de 25/09.
+
+Na aula 3 passaram 7 de 7 testes do SQLite, no commit 62f7ee2 de 25/09. Dos 3 exercícios (total, filtro mínimo e ordenação) funcionou 1.
+
+Na aula 4 passaram 5 de 8 testes, no commit fea4dac de 16/10. Os testes mostram que o teste-banco2.js não existe ou dá erro, o CRUD não responde mais como na aula 3 e os dados não ficam salvos quando o servidor reinicia. A regra dos 180 minutos está no treinosService.js.
+
+Na aula 5 passaram 0 de 8 testes, no commit 36dcb6b de 12/11. Os testes mostram que o login certo não responde 200 com cookie, o perfil com cookie não responde 200, o logout não responde 204, depois do logout o cookie ainda libera o perfil e mais 4 coisas.
+
+A aula 6 não foi entregue, não tem bcrypt no package.json nem criarUsuarios.js, e a senha continua em texto puro.
+
+As notas estão fechadas. Se tiver dúvida, fala na próxima aula.
